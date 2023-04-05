@@ -4,6 +4,19 @@
     <main>
         <div class="py-5 bg-light">
             <div class="container">
+                <form class="form-container" action="{{article.id}}" method="post">
+                <div class="input-row flex-container">
+                <p>Title name</p>
+                <input type="text" name="articleTitle" required>
+                <p>Choose image</p>
+                <input type="text" name="image" required>
+                <p>Article text</p>
+                <textarea name="articleText" rows="8" placeholder="Your Message*" required></textarea>
+                <div class="mobile-center">
+                    <button type="submit" name="submit">Save</button>
+                </div>
+                </div>
+                </form>
                 <div class="py-5 text-center">
                     <h1 class="fw-bold">LAAAAAAAABBASSS</h1>
                     <p class="text-muted">X minutes</p>

@@ -59,24 +59,40 @@ class __TwigTemplate_f503735da36c5a4c8c98c25ed6f7f580 extends Template
         echo "    <main>
         <div class=\"py-5 bg-light\">
             <div class=\"container\">
+                <form class=\"form-container\" action=\"";
+        // line 7
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 7, $this->source); })()), "id", [], "any", false, false, false, 7), "html", null, true);
+        echo "\" method=\"post\">
+                <div class=\"input-row flex-container\">
+                <p>Title name</p>
+                <input type=\"text\" name=\"articleTitle\" required>
+                <p>Choose image</p>
+                <input type=\"text\" name=\"image\" required>
+                <p>Article text</p>
+                <textarea name=\"articleText\" rows=\"8\" placeholder=\"Your Message*\" required></textarea>
+                <div class=\"mobile-center\">
+                    <button type=\"submit\" name=\"submit\">Save</button>
+                </div>
+                </div>
+                </form>
                 <div class=\"py-5 text-center\">
                     <h1 class=\"fw-bold\">LAAAAAAAABBASSS</h1>
                     <p class=\"text-muted\">X minutes</p>
                 </div>
 
                 <img class=\"img-fluid\" src=\"";
-        // line 12
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 12, $this->source); })()), "image", [], "any", false, false, false, 12), "html", null, true);
+        // line 25
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 25, $this->source); })()), "image", [], "any", false, false, false, 25), "html", null, true);
         echo "\" alt=\"\">
 
                 <div class=\"lead mb-4 py-5\">";
-        // line 14
-        echo twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 14, $this->source); })()), "text", [], "any", false, false, false, 14);
+        // line 27
+        echo twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 27, $this->source); })()), "text", [], "any", false, false, false, 27);
         echo "</div>
 
                 <div class=\"d-grid gap-2 d-sm-flex justify-content-sm-center\">
                     <a href=\"";
-        // line 17
+        // line 30
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\" type=\"button\" class=\"btn btn-secondary btn-lg px-4 gap-3\">Back</a>
                 </div>
@@ -101,7 +117,7 @@ class __TwigTemplate_f503735da36c5a4c8c98c25ed6f7f580 extends Template
 
     public function getDebugInfo()
     {
-        return array (  80 => 17,  74 => 14,  69 => 12,  59 => 4,  52 => 3,  35 => 1,);
+        return array (  96 => 30,  90 => 27,  85 => 25,  64 => 7,  59 => 4,  52 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -112,6 +128,19 @@ class __TwigTemplate_f503735da36c5a4c8c98c25ed6f7f580 extends Template
     <main>
         <div class=\"py-5 bg-light\">
             <div class=\"container\">
+                <form class=\"form-container\" action=\"{{article.id}}\" method=\"post\">
+                <div class=\"input-row flex-container\">
+                <p>Title name</p>
+                <input type=\"text\" name=\"articleTitle\" required>
+                <p>Choose image</p>
+                <input type=\"text\" name=\"image\" required>
+                <p>Article text</p>
+                <textarea name=\"articleText\" rows=\"8\" placeholder=\"Your Message*\" required></textarea>
+                <div class=\"mobile-center\">
+                    <button type=\"submit\" name=\"submit\">Save</button>
+                </div>
+                </div>
+                </form>
                 <div class=\"py-5 text-center\">
                     <h1 class=\"fw-bold\">LAAAAAAAABBASSS</h1>
                     <p class=\"text-muted\">X minutes</p>
