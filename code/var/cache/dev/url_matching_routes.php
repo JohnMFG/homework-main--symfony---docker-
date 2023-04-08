@@ -18,7 +18,7 @@ return [
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
-        21 => [[['_route' => 'edit_view', '_controller' => 'App\\Controller\\EditController::view'], ['id'], null, null, false, true, null]],
+        21 => [[['_route' => 'edit_view', '_controller' => 'App\\Controller\\EditController::edit'], ['id'], null, null, false, true, null]],
         45 => [[['_route' => 'article_view', '_controller' => 'App\\Controller\\ViewController::view'], ['id'], null, null, false, true, null]],
         80 => [
             [['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null],

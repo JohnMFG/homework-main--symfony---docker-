@@ -16,7 +16,7 @@
                     {% for article in articles %}
                         <div class="col">
                             {% include '_partials/article-card.html.twig' with {
-                                article: article
+                                article: article, randomMin
                             } %}
                         </div>
                     {% endfor  %}
