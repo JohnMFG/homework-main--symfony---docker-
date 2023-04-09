@@ -11,6 +11,7 @@ return array(
     'App\\Controller\\ViewController' => $baseDir . '/src/Controller/ViewController.php',
     'App\\DataFixtures\\AppFixtures' => $baseDir . '/src/DataFixtures/AppFixtures.php',
     'App\\Entity\\Article' => $baseDir . '/src/Entity/Article.php',
+    'App\\Form\\ArticleType' => $baseDir . '/src/Form/ArticleType.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'App\\Repository\\ArticleRepository' => $baseDir . '/src/Repository/ArticleRepository.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

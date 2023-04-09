@@ -23,6 +23,9 @@ class Article
     #[ORM\Column(length: 255)]
     private ?string $image = null;
 
+    // #[ORM\Column]
+    // private ?int $wordCount = 0;
+
     /**
      * @return int|null
      */
@@ -78,4 +81,20 @@ class Article
     {
         $this->image = $image;
     }
+
+    // /**
+    //  * @return int|null
+    //  */
+    // public function getWordCount(): ?int
+    // {
+    //     return $this->wordCount;
+    // }
+
+    // /**
+    //  * @param int|null $wordCount
+    //  */
+    // public function setWordCount(?int $wordCount): void
+    // {
+    //     $this->wordCount = $wordCount;
+    // }
 }

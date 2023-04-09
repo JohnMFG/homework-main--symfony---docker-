@@ -12,10 +12,11 @@ class IndexController extends AbstractController
     #[Route('/', name: 'home')]
     public function list(ArticleRepository $articleRepository): Response
     {
-        $randomMin = "123";
+        $repo = $articleRepository->findAll();
+        $randomMin = 0;
 
         return $this->render('pages/index.html.twig', [
-            'articles' => $articleRepository->findAll(),
+            'articles' => $repo,
             'randomMin' => $randomMin,
         ]);
     }

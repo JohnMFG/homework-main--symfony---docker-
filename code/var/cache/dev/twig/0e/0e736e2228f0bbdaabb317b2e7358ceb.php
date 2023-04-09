@@ -64,10 +64,10 @@ class __TwigTemplate_44c15d065e29987180cd226e8a4449f0 extends Template
         // line 8
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new RuntimeError('Variable "article" does not exist.', 8, $this->source); })()), "title", [], "any", false, false, false, 8), "html", null, true);
         echo "</h1>
-                    <p class=\"text-muted\">TT: ";
+                    <p class=\"text-muted\">";
         // line 9
         echo twig_escape_filter($this->env, (isset($context["textLenght"]) || array_key_exists("textLenght", $context) ? $context["textLenght"] : (function () { throw new RuntimeError('Variable "textLenght" does not exist.', 9, $this->source); })()), "html", null, true);
-        echo "</p>
+        echo " mins</p>
                 </div>
 
                 <img class=\"img-fluid\" src=\"";
@@ -120,7 +120,7 @@ class __TwigTemplate_44c15d065e29987180cd226e8a4449f0 extends Template
             <div class=\"container\">
                 <div class=\"py-5 text-center\">
                     <h1 class=\"fw-bold\">{{ article.title }}</h1>
-                    <p class=\"text-muted\">TT: {{ textLenght }}</p>
+                    <p class=\"text-muted\">{{ textLenght }} mins</p>
                 </div>
 
                 <img class=\"img-fluid\" src=\"{{ article.image }}\" alt=\"\">
